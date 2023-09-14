@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function validarDados(){
+            if (document.getElementById("Nome").value == "") {
+                alert("O campo nome esta vazio");
+            }
+            if (document.getElementById("Endereco").value == "") {
+                alert("O campo endereço esta vazio");
+            }
+            if (document.getElementById("Bairro").value == "") {
+                alert("O campo bairro esta vazio");
+            }
+            if (document.getElementById("Cep").value == "") {
+                alert("O campo cep esta vazio");
+            }
+            if (document.getElementById("Cidade").value == "") {
+                alert("O campo cidade esta vazio");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="cadastrar" id="cadastrar" method="POST" action="">
+        Nome: <input type="text" name="nome" id="Nome"><br><br>
+        Endereço: <input type="text" name="endereco" id="Endereco"><br><br>
+        Bairro: <input type="text" name="bairro" id="Bairro"><br><br>
+        Cep: <input type="text" name="cep" id="Cep"><br><br>
+        Cidade: <input type="text" name="cidade" id="Cidade"><br><br>
+        
+       
+        <button value="Cadastrar" name="Cadastrar" id="Cadastrar" onclick="validarDados()">Cadastrar</button><br><br>
+    </form>
+</body>
+</html>
